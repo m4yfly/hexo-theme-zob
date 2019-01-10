@@ -1,2 +1,2 @@
-# hexo-theme-0b
+# hexo-theme-zob
 A theme for hexo

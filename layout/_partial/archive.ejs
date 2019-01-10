@@ -1,0 +1,17 @@
+<% if (pagination == 2){ %>
+    <% page.posts.each(function(post){ %>
+      <%- partial('article', {post: post, index: true}) %>
+    <% }) %>
+    <%- partial('paginator') %>
+<% } else {%>
+  <% var last; %>
+  <% page.posts.each(function(post){ %>
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title">
+                <a href="<%- url_for(post.path) %>"><%= post.title %></a>
+            </h1>
+        </header>
+  </article>
+  <% }) %>
+<% } %>
