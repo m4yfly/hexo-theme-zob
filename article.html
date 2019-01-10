@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <title>Article</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById("show-all").onclick=function(){
+                document.getElementById("main-content").classList.toggle("show-all");
+            };
+        };
+    </script>
+</head>
+<body>
+<div class="main-content" id="main-content">
+    <div class="hide">
+        <div class="hide-inner">
+            <div class="search">
+                <form action="#">
+                    <input type="search" class="form-control" placeholder="Search ...">
+                </form>
+            </div>
+            <div class="nav-menu widget">
+                <ul class="navmenu-nav">
+                    <li class="menu-item active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Ask Question</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Question</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Sample Page</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="categories widget">
+                <h3 class="widget-title">Categories</h3>
+                <ul>
+                    <li class="cat-item current-cat">
+                        <a href="#">Digital Marketing</a>
+                    </li>
+                    <li class="cat-item current-cat">
+                        <a href="#">Digital Marketing</a>
+                    </li>
+                    <li class="cat-item current-cat">
+                        <a href="#">Digital Marketing</a>
+                    </li>
+                    <li class="cat-item current-cat">
+                        <a href="#">Digital Marketing</a>
+                    </li>
+                    <li class="cat-item current-cat">
+                        <a href="#">Digital Marketing</a>
+                    </li>
+                    <li class="cat-item current-cat">
+                        <a href="#">Digital Marketing</a>
+                    </li>
+                    <li class="cat-item current-cat">
+                        <a href="#">Digital Marketing</a>
+                    </li>
+                    <li class="cat-item current-cat">
+                        <a href="#">Digital Marketing</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tag widget">
+                <h3 class="widget-title">Tag</h3>
+                <ul>
+                    <li class="cat-item current-cat">
+                        <a href="#">Digital Marketing</a>
+                    </li>
+                    <li class="cat-item current-cat">
+                        <a href="#">Digital Marketing</a>
+                    </li>
+                    <li class="cat-item current-cat">
+                        <a href="#">Digital Marketing</a>
+                    </li>
+                    <li class="cat-item current-cat">
+                        <a href="#">Digital Marketing</a>
+                    </li>
+                    <li class="cat-item current-cat">
+                        <a href="#">Digital Marketing</a>
+                    </li>
+                    <li class="cat-item current-cat">
+                        <a href="#">Digital Marketing</a>
+                    </li>
+                    <li class="cat-item current-cat">
+                        <a href="#">Digital Marketing</a>
+                    </li>
+                    <li class="cat-item current-cat">
+                        <a href="#">Digital Marketing</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="show">
+        <aside class="left-col">
+            <button id="show-all" type="button" class="navbar-toggle">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="profile">
+                <div class="avatar">
+                    <a href="#">
+                        <img class="img-thumbnail" src="img/avatar.jpg" alt="">
+                    </a>
+                </div>
+                <div class="header-author">
+                    <h1>zer0i3</h1>
+                </div>
+                <hr class="divider">
+                <div class="header-subtitle">
+                    <p class="description">全新的Ghost文档</p>
+                </div>
+                <hr class="divider">
+                <div class="social">
+                    <a href="#" class="fa fa-envelope fa-2x"></a>
+                    <a href="#" class="fa fa-github fa-2x"></a>
+                    <a href="#" class="fa fa-feed fa-2x"></a>
+                </div>
+            </div>
+        </aside>
+        <main class="right-col">
+            <article class="post">
+                <header class="post-header">
+                    <h1 class="post-title">
+                        <a href="#">全新的 Ghost 文档上线</a>
+                    </h1>
+                    <div class="post-meta">
+                        <span class="author">
+                            作者：
+                            <a href="#">
+                                王赛
+                            </a>
+                        </span>
+                        <time class="post-date">
+                            2018年11月20日
+                        </time>
+                    </div>
+                </header>
+                <div class="post-content">
+                    <p>从这周起，我们将 Ghost 推荐 Node.js 版本升级为 <strong>Node.js v4 LTS</strong>。</p>
+
+                    <p>我们这样做其实已经落后于计划了。然而，经过大量测试之后，我们确信 Ghost 可以在 Node.js v4 平台上流畅的运行并且内存消耗比原来也减少了。目前，<a href="https://ghost.org/ghost-pro-vs-self-hosting/">Ghost(Pro)</a> 上托管的所有博客都已经运行在 Node.js v4 LTS 平台了，而且升级过程中零问题。</p>
+
+                    <h3 id="nodejs">为什么要升级 Node.js 版本？</h3>
+
+                    <p>将 Ghost(Pro) 上托管的博客全部升级之后，我们发现每个 Ghost 博客所消耗的内存都小于 100mb （注：根据你所使用的主题、内容数量、流量和运行环境的不同会有一些差异）。</p>
+
+                    <p><a href="https://github.com/nodejs/LTS">Node.js LTS 规划</a> 中明确给出了 Node.js v0.10.x 版本的生命周期截止到 2016 年 10 月 1 号。Ghost 将跟随这一规划，也就是说下一次版本升级或者 10 月 1 号之后将不再支持 Node.js v0.10.x 版本。对于 Node.js 0.12.x 版本的支持也将在 2016 年 12 月 31 日截止。 </p>
+
+                    <p>如果你是在自己的服务器上安装的 Ghost，并且计划未来三个月内升级 Ghost 版本，我们建议 Node.js 和 Ghost 的升级分别独立进行，这样便于查找问题。</p>
+
+                    <h3 id="nodejs">如何升级 Node.js</h3>
+
+                    <p>将低版本的 Node.js 升级到 v4 版本分以下四个步骤：</p>
+
+                    <ol>
+                        <li>备份 Ghost！  </li>
+                        <li>升级 Node.js 版本  </li>
+                        <li>在 Ghost 安装目录内执行 <code>npm install --production</code> 命令，确保二进制依赖包是针对 Node.js v4 LTS 版本编译的  </li>
+                        <li>重启 Ghost</li>
+                    </ol>
+
+                    <p>如果你正在使用 Digital Ocean 的 droplet，你可以参照 <a href="https://www.digitalocean.com/community/questions/how-to-upgrade-node-js-on-older-ghost-droplets">excellent Q &amp; A post</a> 这篇文章了解如何一键安装 Ghost 并同时升级 Node.js。</p>
+
+                    <h3 id="">更多细节</h3>
+
+                    <p>参考资料如下：</p>
+
+                    <ul>
+                        <li>Node.js <a href="https://github.com/nodejs/LTS">官方 LTS 规划</a></li>
+                        <li>Ghost's <a href="http://support.ghost.org/supported-node-versions/">被支持的 Node.js 版本</a></li>
+                        <li>详细解释为何升级 Node.js <a href="https://github.com/TryGhost/Ghost/issues/7098">on GitHub</a></li>
+                    </ul>
+
+                    <hr />
+
+                    <p>原文地址：<a href="https://dev.ghost.org/node-4/">https://dev.ghost.org/node-4/</a></p>
+                </div>
+                <footer class="post-footer">
+                    <class class="pull-left tag-list">
+                        <i class="fa fa-folder-open-o"></i>
+                        <a href="#">Android</a>
+                    </class>
+                </footer>
+            </article>
+            <div class="copyright">
+                <p><span>本文标题:</span><a href="#">全新的 Ghost 文档上线</a></p>
+                <p><span>文章作者:</span><a href="/" title="全新的 Ghost 文档上线">zer0i3</a></p>
+                <p><span>发布时间:</span>2016-01-01, 23:55</p>
+                <p><span>最后更新:</span>2016-03-30, 23:21</p>
+
+                <p>
+                    <span>更新历史:</span><i class="fa fa-github"></i>
+                    <a href="#" title="顺序查看文章各部分修改记录" target = "_blank">Blame</a>,
+                    <a href="#" title="查看文章有关更新记录" target = "_blank">History</a><span class="raw">文本模式:</span><i class="fa fa-file-text-o"></i>
+                    <a href="#" title="查看 & 下载文章 Markdown 原始文本" target = "_blank"> .md Raw</a>
+                </p>
+
+                <p>
+                    <span>原始链接:</span><a class="post-url" href="#" title="关于 Hexo 配置文件中的 true 和 false">http://localhost.com</a>
+                    <span class="copy-path" data-clipboard-text="#" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+                    <script> var clipboard = new Clipboard('.copy-path'); </script>
+                </p>
+                <p>
+                    <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+                </p>
+            </div>
+            <footer class="footer-info">
+                <div class="footer-left">
+                    <i class="fa fa-copyright"></i>2019 zer0i3
+                </div>
+                <div class="footer-right">
+                    <a href="#">Hexo</a>
+                    <span>Theme</span>
+                    <a href="#">zob</a>
+                    <span>by <i class="fa fa-heart"></i>zer0i3</span>
+                </div>
+            </footer>
+        </main>
+    </div>
+</div>
+</body>
+</html>
