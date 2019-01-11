@@ -5,11 +5,12 @@
     border-color:#080808;
     border-width: 0 1px 0 0;
     overflow-y: auto;
+    overflow-x: hidden;
     width: 0;
-    transition:width 1s;
-    -webkit-transition: width 1s;
-    -moz-transition: width 1s;
-    -o-transition: width 1s;
+    transition:width 0.5s;
+    -webkit-transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    -o-transition: width 0.5s;
 }
 .hide .hide-inner{
     width:300px;
@@ -107,4 +108,24 @@
     letter-spacing: 1px;
     color: rgba(255,255,255,0.5);
     margin: 0 0 12px;
+}
+
+
+
+
+.hide::-webkit-scrollbar {
+width: 4px;
+}
+.hide::-webkit-scrollbar-track {
+background-color: #fff;
+border-left: 1px solid #666;
+}
+.hide::-webkit-scrollbar-thumb {
+background-color: #999;
+}
+.hide::-webkit-scrollbar-thumb:hover {
+background-color: #666;
+}
+.hide::-webkit-scrollbar-thumb:active{
+background-color:#333;
 }
