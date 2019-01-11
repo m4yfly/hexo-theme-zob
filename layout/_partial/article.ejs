@@ -30,7 +30,9 @@
         <footer class="post-footer">
             <class class="pull-left tag-list">
                 <i class="fa fa-folder-open-o"></i>
-                <a href="#">Android</a>
+                <% post.tags.each(function(tag){ %>
+                    <a href="<%- url_for(tag.path) %>"><%= tag.name %></a>
+                  <% }) %>
             </class>
         </footer>
 </article>
