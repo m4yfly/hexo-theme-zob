@@ -50,22 +50,25 @@
     background-color: #080808;
 }
 .hide .categories {
-    margin: 48px 0 0;
+    margin: 40px 0 0;
     color:#777;
 }
-.hide .categories ul {
+.hide .categories .archive-list {
     margin: 0;
     padding: 0;
     font-size:12px;
     line-height: 1.5;
 }
-.hide .categories li {
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+.hide .categories .archive-list-item {
     padding: 10px 0;
 }
-.hide .categories a {
+.hide .categories .archive-list-link {
     color: #fff;
     text-decoration: none;
+}
+.hide .categories .archive-list-count {
+    font-size:1.2em;
+    margin:0 10px;
 }
 .hide .categories li:before {
     display: inline-block;
@@ -76,30 +79,33 @@
     content:"\f07c";
 }
 .hide .tag {
-    margin: 48px 0 0;
+    margin: 30px 0 0;
     color:#777;
 }
-.hide .tag ul {
-    margin: 0;
-    padding: 0;
-    font-size:12px;
-    line-height: 1.5;
+.hide .tag.widget ul {
+    margin:10px auto;
+    border:0;
 }
-.hide .tag li {
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    padding: 10px 0;
+.tag .tag-list .tag-list-item {
+    border: 1px solid #ebebeb;
+    padding: 2px 7px;
+    color: #959595;
+    line-height: 1.5em;
+    display: inline-block;
+    margin: 0 7px 7px 0;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
-.hide .tag a {
-    color:#fff;
+.tag .tag-list .tag-list-item:hover{
+    color: #000;
+    background: #ffffff;
+}
+.tag .tag-list .tag-list-item .tag-list-link{
     text-decoration: none;
 }
-.hide .tag li:before {
-    display: inline-block;
-    font:normal normal normal 14px/1 FontAwesome;
-    color: #555;
-    margin-right:10px;
-    font-size:14px;
-    content:"\f07c";
+.tag .tag-list .tag-list-count{
+    margin:0 10px;
 }
 .widget .widget-title {
     font-family:"Roboto","Helvetica Neue","Helvetica","Arial",sans-serif;
