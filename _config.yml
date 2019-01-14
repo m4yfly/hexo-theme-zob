@@ -1,7 +1,8 @@
 # Header
 menu:
   Home: /
-  Archives: /archives
+  Archives: /archives/
+  Links: /links/
 rss: /atom.xml
 
 # Content
@@ -41,3 +42,17 @@ fb_app_id:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
 highlight_theme: normal
+
+links:
+  - url: https://qvq.im/
+    name: 4uuu Nya
+    img: https://qvq.im/static/img/avatar.png
+    info: 4uuu Nya's Blog
+  - url: http://www.wiattack.net/
+    name: icecolor
+    img:
+    info: icecolor's Blog
+  - url: http://n3k0sec.top/
+    name: n3k0
+    img: https://i.loli.net/2018/12/11/5c0f283aaf798.jpg
+    info: n3k0's Blog

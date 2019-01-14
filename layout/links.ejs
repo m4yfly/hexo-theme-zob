@@ -1,0 +1,16 @@
+<div class="links-wrap">
+    <% if (theme.links && theme.links.length) { %>
+        <h1>Links</h1>
+        <div class="linkslist">
+            <% theme.links.forEach(function(item) { %>
+                <a href="<%= item.url %>" target="_blank" title="<%= item.info %>">
+                    <figure>
+                        <img src="<% if (item.img) {%><%= item.img %><% } else { %>/img/default.jpg<% } %>">
+                        <figcaption><%= item.name %></figcaption>
+                        <p><%= item.info %></p>
+                    </figure>
+                </a>
+            <% }); %>
+        </div>
+    <% } %>
+</div>

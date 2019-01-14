@@ -27,12 +27,14 @@
                 <%- post.content %>
             </div>
           <% } %>
-        <footer class="post-footer">
-            <class class="pull-left tag-list">
-                <i class="fa fa-folder-open-o"></i>
-                <% post.tags.each(function(tag){ %>
-                    <a href="<%- url_for(tag.path) %>"><%= tag.name %></a>
-                  <% }) %>
-            </class>
-        </footer>
+        <% if(post.tags) {%>
+            <footer class="post-footer">
+                <class class="pull-left tag-list">
+                    <i class="fa fa-folder-open-o"></i>
+                    <% post.tags.each(function(tag){ %>
+                        <a href="<%- url_for(tag.path) %>"><%= tag.name %></a>
+                      <% }) %>
+                </class>
+            </footer>
+        <% } %>
 </article>
