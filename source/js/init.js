@@ -4,5 +4,8 @@ window.onload = function() {
     };
     var path = window.location.pathname;
     path = path === '/' ? path : path.substring(0, path.length - 1);
-    document.querySelector('.menu-item a[href^="' + path + '"]').parentElement.classList.add('menu-item-active');
+    var menuItem = document.querySelector('.menu-item a[href^="' + path + '"]');
+    if(menuItem && menuItem.parentElement){
+        menuItem.parentElement.classList.add('menu-item-active');
+    }
 };
